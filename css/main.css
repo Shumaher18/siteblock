@@ -46,19 +46,22 @@ div {
     text-shadow: 5px -6px 10px #000;
 }
 .layer3 {
-    float: right;
-    padding-top: 15px;
+    position: relative;
+    float:left;
 }
 
 /*Кнопка авторизации*/
 .layer4 {
-    float: right;
+    position: absolute;
+    right: 50px;
+    float:left;
     width: 200px;
     padding-top: 15px;
     padding: auto;
 }
 .layer4 .button_autorisation {
   position: relative;
+  left: 100px;
   display: inline-block;
   color: black;
   font-weight: 700;
@@ -76,26 +79,29 @@ div {
 .layer4 .button_autorisation:active {
   background: white;
 }
+.layer4 .modalDialog{
+  border: 2px;
+  position: absolute;
+}
 
 /*Меню*/
 #menu ul {
 	list-style: none; /*убираем маркеры списка*/
 	margin: 0; /*убираем отступы*/
 	padding-left: 0; /*убираем отступы*/
-	margin-top:25px; /*делаем отступ сверху*/
-	background:#808080; /*добавляем фон всему меню*/
-	height: 50px; /*задаем высоту*/
+	background:silver; /*добавляем фон всему меню*/
+	height: 76px; /*задаем высоту*/
 }
 #menu a {
 	text-decoration: none; /*убираем подчеркивание текста ссылок*/
-	background:#808080; /*добавляем фон к пункту меню*/
+	background:silver; /*добавляем фон к пункту меню*/
 	color:#fff; /*меняем цвет ссылок*/
-	padding:0px 15px; /*добавляем отступ*/
+	padding:15px 20px 15px 35px; /*добавляем отступ*/
 	font-family: arial; /*меняем шрифт*/
 	line-height:50px; /*ровняем меню по вертикали*/
 	display: block;
 	border-right: 2px solid #696969; /*добавляем бордюр справа*/
-	border-left: 2px solid #696969;
+  height: 46px;
 }
 #menu a:hover {
 	background:#87CEEB;/*добавляем эффект при наведении*/
@@ -108,17 +114,28 @@ div {
 /*Стили для скрытого выпадающего меню*/
 #menu li > ul {
     position:absolute;
-    top:25px;
+    top:70px;
     display:none;
+    height: 25px;
+}
+#menu ul li ul li a {
+    padding: 0 15px 0 15px;
+    height: 50px;
+    border-left: 0px;
+    border-right: 0px;
 }
 /*Делаем скрытую часть видимой*/
 #menu li:hover > ul {
     display:block;
+    height: 25px;
     width:150px;  /*Задаем ширину выпадающего меню*/
 }
 #menu li:hover > ul > li {
     float:none; /*Убираем горизонтальное позиционирование*/
     width:150px;
+}
+#leftmenuitem{
+    border-left: 2px solid #696969;
 }
 
 /*Таблица*/
@@ -131,7 +148,7 @@ div {
 
 .col_wrap{
 	display: flex;
-	display: -webkit-flex; 
+	display: -webkit-flex;
 	height:100%;
 	justify-content: baseline;
 }
