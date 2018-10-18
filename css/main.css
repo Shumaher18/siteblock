@@ -1,0 +1,88 @@
+.header, .header .cell-wrapper, .header-affix, .header-row {
+    height: 76px;
+}
+
+.header-affix {
+    /*min-width: 1240px;*/
+    width: 99.3%;
+    background: silver;
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.65);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.65);
+    -webkit-transition: top .2s;
+    -o-transition: top .2s;
+    transition: top .2s;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+}
+
+div {
+    display: block;
+}
+/*Шапка*/
+.layer1 {
+    float: left;
+    width: 70px;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.layer2 {
+  	display: flex;
+    float: left;
+    width: 400px;
+    font: 40pt impact;
+    color: white;
+  /*align-items: center;*/
+}
+.layer2 font{
+    font-size: 56;
+    font-family: 'Permanent Marker', cursive;
+    color: #FF8C00;
+    text-shadow: 5px -6px 10px #000;
+}
+.layer3 {
+    float: right;
+    padding-top: 15px;
+}
+.layer4 { /*Кнопка авторизации*/
+    float: right;
+    width: 200px;
+    padding-top: 15px;
+    padding: auto;
+}
+.layer4 .button_autorisation {
+  position: relative;
+  display: inline-block;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 4px;
+  transition: 0.2s;
+}
+.layer4 .button_autorisation:hover {
+  background: rgba(255,255,255,.2);
+}
+.layer4 .button_autorisation:active {
+  background: white;
+}
+/*Шапка*/
+/*main-content*/
+.mainblock{
+    float: left;
+    width: calc(60% - 1px);
+    height: 90%;
+    border:1px solid black;
+}
+.sideblock{
+  	width:calc(40% - 1px);
+  	height:100%;
+  	border:1px solid black;
+}
+/*main-content*/
