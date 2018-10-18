@@ -21,6 +21,7 @@
 div {
     display: block;
 }
+
 /*Шапка*/
 .layer1 {
     float: left;
@@ -37,6 +38,7 @@ div {
     color: white;
   /*align-items: center;*/
 }
+
 .layer2 font{
     font-size: 56;
     font-family: 'Permanent Marker', cursive;
@@ -47,7 +49,9 @@ div {
     float: right;
     padding-top: 15px;
 }
-.layer4 { /*Кнопка авторизации*/
+
+/*Кнопка авторизации*/
+.layer4 {
     float: right;
     width: 200px;
     padding-top: 15px;
@@ -72,7 +76,7 @@ div {
 .layer4 .button_autorisation:active {
   background: white;
 }
-/*Шапка*/
+
 /*main-content*/
 .mainblock{
     float: left;
@@ -85,4 +89,3 @@ div {
   	height:100%;
   	border:1px solid black;
 }
-/*main-content*/
