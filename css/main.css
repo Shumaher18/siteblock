@@ -76,16 +76,36 @@ div {
 .layer4 .button_autorisation:active {
   background: white;
 }
+/*Таблица*/
+.table {
+  display: table;
+  width: 100%;
+  height: 100%;
+  padding-top: 75px;
+}
+
+.col_wrap{
+	display: flex;
+	display: -webkit-flex;
+	height:100%;
+	justify-content: baseline;
+}
 
 /*main-content*/
 .mainblock{
-    float: left;
-    width: calc(60% - 1px);
-    height: 90%;
-    border:1px solid black;
+  border:1px solid black;
+  width: calc(70% - 4px);
+  height: inherit;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
 }
+/*feed-content*/
 .sideblock{
-  	width:calc(40% - 1px);
-  	height:100%;
-  	border:1px solid black;
+  display: flex;
+  border: 1px solid black;
+  border-width: 1px 1px 1px 0px;
+  width: calc(29% - 3px);
+  align-items: center;
+  height: inherit;
 }
