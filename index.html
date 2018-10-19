@@ -1,6 +1,8 @@
 <html>
 <head>
+
 <link rel="stylesheet" href="css/main.css">
+<script src="js/main.js"></script>
 <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
 	</head>
 
@@ -32,22 +34,22 @@
 							</div>
       	</div>
 				<div class="layer4"> <!--Авторизация-->
-					<a href="#" class="button_autorisation">Войти</a>
-
-					<div id="openModal" class="modalDialog">
-						<form id="login">
+					<a href="javascript:void(0)" onclick="showHide('openModal')" class="button_autorisation">Войти</a>
+							<div id="openModal" class="hidden" onblur="showHide('openModal')">
+								<form id="login">
 								<h1>Авторизация</h1>
-								<fieldset id="inputs">
-										<input id="username" type="text" placeholder="Логин" autofocus required>
-										<input id="password" type="password" placeholder="Пароль" required>
-								</fieldset>
-								<fieldset id="actions">
-										<input type="submit" id="submit" value="Войти">
-										<a href="">Забыли пароль?</a><a href="">Регистрация</a>
-								</fieldset>
-						</form>
-					</div>
+									<fieldset id="inputs">
+											<input id="username" type="text" placeholder="Логин" autofocus required>
+											<input id="password" type="password" placeholder="Пароль" required>
+									</fieldset>
+									<fieldset id="actions">
+											<input type="submit" id="submit" value="Войти">
+											<a href="">Забыли пароль?</a><a href="">Регистрация</a>
+									</fieldset>
+								</form>
+							</div>
 				</div>
+
 			</header>
 <div class="table">
 	<div class="col_wrap">
