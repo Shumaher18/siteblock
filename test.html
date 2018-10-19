@@ -1,7 +1,77 @@
 <html>
 <head>
-</head>
-<body>
-  <font>hello,word</font>
-</body>
-</html>
+
+<link rel="stylesheet" href="css/test.css">
+<script src="js/main.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+	</head>
+
+		<body>
+			<header>
+				<div class="header-affix header-fixed">
+
+					<div class="logo"> <!--Лого-->
+						<img src="img/logo.png" width="59px" height="68px"></img>
+					</div>
+
+					<div class="name"> <!--Название-->
+						<font>FOXs SPACE</font>
+					</div>
+
+					<div class="divmenu"> <!--Меню-->
+							<div id="menu">
+									<ul>
+										<li><a href="#">Главная</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Документы</a>
+											<ul>
+												<li><a href="#">Лицензии</a></li>
+												<li><a href="#">Грамоты</a></li>
+											</ul>
+										</li>
+									</ul>
+							</div>
+      	</div>
+
+				<div class="search"> <!--Поиск-->
+						<form>
+						<input id="searchline" type="search" placeholder="Поиск">
+						<button type="submit"></button>
+					</form>
+				</div>
+				<div class="divaddbutton"> <!--Добавление-->
+					<a href="javascript:void(0)" onclick="showHide('addpost')" class="headbuttons">Добавить пост</a>
+					<div id="addpost" class="hidden" onblur="showHide('addpost')">
+					</div>
+				</div>
+
+
+				<div class="divautorisation"> <!--Авторизация-->
+					<a href="javascript:void(0)" onclick="showHide('openModal')" class="headbuttons">Войти</a>
+							<div id="openModal" class="hidden" onblur="showHide('openModal')">
+								<form id="login">
+								<h1>Авторизация</h1>
+									<fieldset id="inputs">
+											<input id="username" type="text" placeholder="Логин" autofocus required>
+											<input id="password" type="password" placeholder="Пароль" required>
+									</fieldset>
+									<fieldset id="actions">
+											<input type="submit" id="submit" value="Войти">
+											<a href="">Забыли пароль?</a><a href="">Регистрация</a>
+									</fieldset>
+								</form>
+							</div>
+				</div>
+
+			</header>
+<div class="table">
+	<div class="col_wrap">
+	<div class="mainblock">
+	</div>
+
+	<div class="sideblock">
+	</div>
+</div>
+</div>
+	</body>
+	</html>
