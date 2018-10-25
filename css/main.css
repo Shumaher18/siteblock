@@ -103,7 +103,7 @@ div {
 	position:relative;
 	width: auto;
 }
-#menu li > ul {
+/*#menu li > ul {
     position:absolute;
     top:70px;
     display:none;
@@ -125,7 +125,7 @@ div {
 #menu li:hover > ul > li {
     float:none;
     width:150px;
-}
+}*/
 
 /*Форма доабавления*/
 .divaddbutton{
@@ -136,42 +136,35 @@ div {
 }
 
 /*Форма авторизации*/
-.divautorisation {
-    position: relative;
-    float:left;
-    width: 120px;
-    height: 76px;
-    padding: auto;
-}
 #openModal{
   border-radius: 10px;
-  height: 240px;
-  width: 400px;
-  border: 2px solid;
+  height: 280px;
+  width: 280px;
+  border: 3px solid;
   position: absolute;
-  right: -20px;
+  right: 0px;
   top: 60px;
-  background:  rgb(198,85,39,.5);
+  background: white;
 }
 #inputs input{
-  background: #f1f1f1;
+  background: #ffd589;
   padding: 15px 15px 15px 30px;
   margin: 10px;
-  width: 353px;
+  width: 240px;
   border: 1px solid #ccc;
 }
 fieldset{
   border-width: 0px;
   padding: 0;
   margin: 5px auto;
-  width: 380px;
+  width: 260px;
 }
 #openModal h1{
   text-transform: uppercase;
   text-align: center;
   margin: 10px 0 10px 0;
   letter-spacing: 4px;
-  font: normal 26px Verdana;
+  font: normal 26px Arias;
   position: relative;
 }
 .hidden {
@@ -181,23 +174,28 @@ fieldset{
   display: block;
 }
 #submit{
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.3), 0 1px 0 rgba(255, 255, 255, 0.3) inset;
-  border-width: 1px;
+  border-width: 0px;
   border-style: solid;
-  border-color: #6DC39E;
-  float: left;
+  border-color: black;
   height: 35px;
   padding: 0;
-  width: 120px;
+  width: 250px;
   cursor: pointer;
-  font: bold 15px Arial, Helvetica;
-  color: #c65527;
+  font: 15px Arial;
+  color: black;
+  margin: 10px 15px;
+  background: #ffbc01;
+  border-radius: 5px;
 }
 #actions a{
-    color: #3151A2;
-    float: right;
+    text-decoration: none;
+    color: black;
     line-height: 35px;
-    margin-left: 10px;
+    margin: 0px 10px 15px 15px;
+    padding: 5px; добавляем отступ*/
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ffbc01;
 }
 
 /*Таблица*/
