@@ -11,6 +11,7 @@
     -webkit-transition: top .2s;
     -o-transition: top .2s;
     transition: top .2s;
+    border-radius: 0 0 10px 10px;
 }
 
 .header-fixed {
@@ -86,12 +87,12 @@ div {
 #menu a {
 	text-decoration: none;
 	color:black;
-	padding:15px 0px 15px 0px; добавляем отступ*/
+	padding:15px 20px 15px 20px; добавляем отступ*/
 	font-family: arial;
 	line-height:50px;
 	display: block;
   height: 46px;
-  font-size: 20;
+  font-size: 18;
   text-align: center;
 }
 #menu a:hover {
@@ -100,7 +101,7 @@ div {
 #menu li {
 	float:left;
 	position:relative;
-	width: 150px;
+	width: auto;
 }
 #menu li > ul {
     position:absolute;
@@ -216,19 +217,22 @@ fieldset{
 
 /*main-content*/
 .mainblock{
-  border:1px solid black;
-  width: 70%;
+  border:2px solid #ffbc01;
+  border-width: 2px 1px 2px 2px;
+  width: 75%;
   height: inherit;
   display: flex;
   display: -webkit-flex;
   align-items: center;
+  border-radius: 10px;
 }
 /*feed-content*/
 .sideblock{
   display: flex;
-  border: 1px solid black;
-  border-width: 1px 1px 1px 0px;
-  width: 30%;
+  border: 2px solid black;
+  border-width: 2px 2px 2px 1px;
+  width: 25%;
   align-items: center;
   height: inherit;
+  border-radius: 10px;
 }
