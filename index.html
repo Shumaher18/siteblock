@@ -26,7 +26,7 @@
 								<ul>
 									<li><a href="index.html">НОВОСТИ</a></li>
 									<li><a href="#">ДОБАВИТЬ ПОСТ</a></li>
-									<li><a href="#">О НАС</a></li>
+									<li><a href="javascript:void(0)" onclick="showHide('o_nas')">О НАС</a></li>
 									<li><a href="javascript:void(0)" onclick="showHide('openModal')">ВОЙТИ</a>
 									</li>
 								</ul>
@@ -43,6 +43,26 @@
 										<input type="submit" id="submit" value="ВОЙТИ">
 								</fieldset>
 							</form>
+						</div>
+
+						<div id="o_nas" class="hidden" onblur="showHide('o_nas')">
+							<div id="main_o_nas">
+								<h1>О нас</h1>
+								<p>Мы - просто компания студентов, которые сделали данную платформу для получения зачета по предмету.</p>
+								<p>В разработке принимали участие:</p>
+								<ul>
+									<li> <p>Пешкес Валерий</p> <a href="https://vk.com/peshkes"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
+									<li> <p>Литвяк Виктор</p><a href="https://vk.com/victor.litvyak"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
+									<li> <p>Хохлов Алексей</p><a href="https://vk.com/lehka_omg"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
+									<li> <p>Собкалов Алексей</p><a href="https://vk.com/akyoster"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
+									<li> <p>Кеян Лиана</p><a href="https://vk.com/l.keyan"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
+								</ul>
+						</div>
+
+						<div id="diskleymer">
+							<h4>Дисклеймер</h4>
+							<p>Все совпадения с другими сайтами и компаниями случайны. Сайт полностью придуман с 0.</p>
+						</div>
 						</div>
 				</div>
 
