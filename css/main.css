@@ -198,6 +198,58 @@ fieldset{
     border: 2px solid #ffbc01;
 }
 
+/*О нас*/
+#o_nas{
+  width: 500px;
+  height: 388px;
+  border-radius: 10px;
+  border: 3px solid;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  background: white;
+}
+#o_nas h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  letter-spacing: 4px;
+  font: normal 26px Arias;
+  position: relative;
+}
+#o_nas ul{
+  margin: 5px 0 10px 0;
+}
+#o_nas li{
+  list-style-type: none;
+  font-family: arial;
+}
+#o_nas li p{
+  display: inline;
+}
+#o_nas img{
+  position: relative;
+  top: 4px;
+}
+#o_nas p{
+  font: normal 18px Arias;
+  padding: 5px;
+  margin: 5px 0;
+}
+#diskleymer{
+  background-color: #ffd589;
+  border: 0px solid #ffbc01;
+  border-radius: 5px;
+  padding: 5px;
+}
+#o_nas h4{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  font: normal 20px Arias;
+  position: relative;
+}
+
 /*Таблица*/
 .table {
   display: table;
