@@ -35,7 +35,7 @@ div {
 /*Поиск*/
 .search{
   float: left;
-  width: 1000px;
+  width: calc(100% - 800px);
   height: 76px;
   position: relative;
   border-left: 1px solid black;
@@ -75,6 +75,7 @@ div {
 
 /*Меню*/
 .divmenu{
+  width: 550px;
   position: relative;
   float: right;
 }
@@ -128,11 +129,64 @@ div {
 }*/
 
 /*Форма доабавления*/
-.divaddbutton{
+#addpost{
+  border-radius: 10px;
+  height: 410px;
+  width: 400px;
+  border: 3px solid;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  background: white;
+}
+#addpost #inputs input{
+  background: #ffd589;
+  padding: 15px 15px 15px 30px;
+  margin: 10px;
+  width: 360px;
+  border: 1px solid #ccc;
+}
+#addpost fieldset{
+  border-width: 0px;
+  padding: 0;
+  margin: 5px auto;
+  width: 380px;
+}
+#addpost h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  letter-spacing: 4px;
+  font: normal 26px Arias;
   position: relative;
-  float:left;
-  width: 170px;
-  height: 76px;
+}
+#addpost textarea {
+    resize:none
+}
+#addpost #submit{
+  border-width: 0px;
+  border-style: solid;
+  border-color: black;
+  height: 35px;
+  padding: 0;
+  width: 250px;
+  cursor: pointer;
+  font: 15px Arial;
+  color: black;
+  margin: 10px 15px;
+  background: #ffbc01;
+  border-radius: 5px;
+  float: right;
+}
+#addpost #actions a{
+    text-decoration: none;
+    color: black;
+    line-height: 35px;
+    margin: 0px 10px 15px 15px;
+    padding: 5px; добавляем отступ*/
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ffbc01;
 }
 
 /*Форма авторизации*/
@@ -146,14 +200,14 @@ div {
   top: 60px;
   background: white;
 }
-#inputs input{
+#openModal #inputs input{
   background: #ffd589;
   padding: 15px 15px 15px 30px;
   margin: 10px;
   width: 240px;
   border: 1px solid #ccc;
 }
-fieldset{
+#openModal fieldset{
   border-width: 0px;
   padding: 0;
   margin: 5px auto;
@@ -173,7 +227,7 @@ fieldset{
 .shown{
   display: block;
 }
-#submit{
+#openModal #submit{
   border-width: 0px;
   border-style: solid;
   border-color: black;
@@ -187,7 +241,7 @@ fieldset{
   background: #ffbc01;
   border-radius: 5px;
 }
-#actions a{
+#openModal #actions a{
     text-decoration: none;
     color: black;
     line-height: 35px;
@@ -269,18 +323,12 @@ fieldset{
 /*main-content*/
 .mainblock{
   border:3px solid #ffbc01;
-  width: 65%;
+  width: 75%;
   height: inherit;
   display: flex;
   display: -webkit-flex;
   align-items: center;
   border-radius: 10px;
-}
-
-.fillblock{
-  width:10%;
-  display: flex;
-  align-items: center;
 }
 
 /*feed-content*/
