@@ -35,7 +35,11 @@ div {
 /*Поиск*/
 .search{
   float: left;
+<<<<<<< HEAD
   width: 1190px;
+=======
+  width: calc(100% - 800px);
+>>>>>>> 044605f4cd7fb5869532a0f17bc1262d8ae31239
   height: 76px;
   position: relative;
   border-left: 1px solid black;
@@ -75,6 +79,7 @@ div {
 
 /*Меню*/
 .divmenu{
+  width: 550px;
   position: relative;
   float: right;
 }
@@ -127,14 +132,6 @@ div {
     width:150px;
 }*/
 
-/*Форма доабавления*/
-.divaddbutton{
-  position: relative;
-  float:left;
-  width: 170px;
-  height: 76px;
-}
-
 /*Форма авторизации*/
 #openModal{
   border-radius: 10px;
@@ -146,14 +143,14 @@ div {
   top: 60px;
   background: white;
 }
-#inputs input{
+#openModal #inputs input{
   background: #ffd589;
   padding: 15px 15px 15px 30px;
   margin: 10px;
   width: 240px;
   border: 1px solid #ccc;
 }
-fieldset{
+#openModal fieldset{
   border-width: 0px;
   padding: 0;
   margin: 5px auto;
@@ -173,7 +170,7 @@ fieldset{
 .shown{
   display: block;
 }
-#submit{
+#openModal #submit{
   border-width: 0px;
   border-style: solid;
   border-color: black;
@@ -187,7 +184,7 @@ fieldset{
   background: #ffbc01;
   border-radius: 5px;
 }
-#actions a{
+#openModal #actions a{
     text-decoration: none;
     color: black;
     line-height: 35px;
@@ -196,6 +193,58 @@ fieldset{
     text-align: center;
     border-radius: 5px;
     border: 2px solid #ffbc01;
+}
+
+/*О нас*/
+#o_nas{
+  width: 500px;
+  height: 388px;
+  border-radius: 10px;
+  border: 3px solid;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  background: white;
+}
+#o_nas h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  letter-spacing: 4px;
+  font: normal 26px Arias;
+  position: relative;
+}
+#o_nas ul{
+  margin: 5px 0 10px 0;
+}
+#o_nas li{
+  list-style-type: none;
+  font-family: arial;
+}
+#o_nas li p{
+  display: inline;
+}
+#o_nas img{
+  position: relative;
+  top: 4px;
+}
+#o_nas p{
+  font: normal 18px Arias;
+  padding: 5px;
+  margin: 5px 0;
+}
+#diskleymer{
+  background-color: #ffd589;
+  border: 0px solid #ffbc01;
+  border-radius: 5px;
+  padding: 5px;
+}
+#o_nas h4{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  font: normal 20px Arias;
+  position: relative;
 }
 
 /*Таблица*/
