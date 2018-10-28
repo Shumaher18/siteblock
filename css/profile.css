@@ -35,7 +35,7 @@ div {
 /*Поиск*/
 .search{
   float: left;
-  width: 1000px;
+  width: 1190px;
   height: 76px;
   position: relative;
   border-left: 1px solid black;
@@ -216,11 +216,12 @@ fieldset{
 
 /*main-content*/
 .mainblock{
+  display: table;
   border:3px solid #ffbc01;
   width: 65%;
   height: inherit;
-  display: flex;
-  display: -webkit-flex;
+  /* display: flex; */
+  /* display: -webkit-flex; */
   align-items: center;
   border-radius: 10px;
 }
@@ -233,20 +234,49 @@ fieldset{
 
 /*feed-content*/
 .sideblock{
-  display: flex;
+  /*display: flex;*/
   border: 3px solid black;
   width: 25%;
-  align-items: center;
+  /*align-items: center;*/
   height: inherit;
   border-radius: 10px;
 }
 .avatar{
-  /*margin-left: 34%;*/
-  /*border: 3px solid black;*/
-  width: 100%;
+  padding-top: 50%;
+  text-align: center;
   position: relative;
 }
+
 .profileinfo{
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+
+.addpost{
+ margin: 0 auto;
+ text-align:center;
+ width: 50%;
+}
+.button1{
+  padding: 10px;
+  background-color: orange;
   border: 1px solid black;
+}
+.profilemainblock{
+  display: row;
+  height: 10%;
   width: 100%;
+  border:1px solid black;
+  /* border-width: 0px 1px 1px 1px; */
+  /* border-radius: 10px; */
+}
+.myanswer{
+  margin-top: 10px;
+  margin-left: 10px;
+  position: absolute;
+  width:5%;
+  border: 3px solid black;
+  padding: 5px;
+  text-align:center;
 }
