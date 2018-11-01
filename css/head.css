@@ -304,7 +304,7 @@ div {
   position: relative;
 }
 /* Регистрация */
-#registration{
+#reg{
   border-radius: 10px;
   height: 400px;
   width: 500px;
@@ -314,20 +314,20 @@ div {
   margin-top: 10%;
   background: white;
 }
-#registration #inputs input{
+#reg #inputs input{
   background: #ffd589;
   padding: 15px 15px 15px 30px;
   margin: 10px;
   width: 350px;
   border: 1px solid #ccc;
 }
-#registration fieldset{
+#reg fieldset{
   border-width: 0px;
   padding: 0;
   margin: 5px auto;
   width: 260px;
 }
-#registration h1{
+#reg h1{
   text-transform: uppercase;
   text-align: center;
   margin: 10px 0 10px 0;
@@ -341,7 +341,7 @@ div {
 .shown{
   display: block;
 }
-#registration #submit{
+#reg #submit{
   border-width: 0px;
   border-style: solid;
   border-color: black;
@@ -355,7 +355,7 @@ div {
   background: #ffbc01;
   border-radius: 5px;
 }
-#registration #actions a{
+#reg #actions a{
     text-decoration: none;
     color: black;
     line-height: 35px;
@@ -364,4 +364,13 @@ div {
     text-align: center;
     border-radius: 5px;
     border: 2px solid #ffbc01;
+}
+#registration
+{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  right: 0;
+ background-color: rgba(0,0,0,0.5);
 }
