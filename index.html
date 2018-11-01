@@ -73,14 +73,31 @@
 										<input id="password" type="password" placeholder="ПАРОЛЬ" required>
 								</fieldset>
 								<fieldset id="actions">
-										<a href="">Забыли пароль?</a><a href="">Регистрация</a>
+										<a href="">Забыли пароль?</a><a href="javascript:void(0)" onclick="showHide('registration')">Регистрация</a>
 										<input type="submit" id="submit" value="ВОЙТИ">
 								</fieldset>
 							</form>
 						</div>
+						<!-- <div id ="registration" class="hidden" onblur="showHide('registration')" tabindex="1">
+							efasdfhasfa
+						</div> -->
 				</div>
 
 			</header>
+			<div id ="registration" class="hidden" onblur="showHide('registration')" tabindex="1">
+				<form id="reg">
+				<h1>Регистрация</h1>
+					<fieldset id="inputs">
+							<input id="username" type="text" placeholder="ЛОГИН" autofocus required>
+							<input id="email" type="text" placeholder="E-MAIL" required>
+							<input id="password" type="password" placeholder="ПАРОЛЬ" required>
+							<input id="conpassword" type="password" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
+					</fieldset>
+					<fieldset id="actions">
+							<input type="submit" id="submit" value="РЕГИСТРАЦИЯ">
+					</fieldset>
+				</form>
+			</div>
 <div class="table">
 	<div class="col_wrap">
 	<div class="mainblock">
