@@ -23,6 +23,8 @@
   display: -webkit-flex;
   align-items: center;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
 }
 
 /*feed-content*/
@@ -33,4 +35,32 @@
   align-items: center;
   height: inherit;
   border-radius: 10px;
+  position: relative;
+  z-index: 1;
+}
+
+body{
+  background-image: url(../img/bighvost.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+#divfilterbutton a {
+	text-decoration: none;
+	color:black;
+	padding:10px 20px; добавляем отступ*/
+	font-family: arial;
+	display: block;
+  font-size: 15;
+  text-align: center;
+  height: 20px;
+}
+
+#divfilterbutton{
+  position: absolute;
+  bottom: 0;
+  border: 1px solid;
+  border-radius: 8px;
+
 }

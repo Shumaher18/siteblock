@@ -46,7 +46,7 @@
 							</form>
 						</div>
 
-						<div id="o_nas" class="hidden" onblur="showHide('o_nas')">
+						<div id="o_nas" class="hidden" onblur="showHide('o_nas')" tabindex="0">
 							<div id="main_o_nas">
 								<h1>О нас</h1>
 								<p>Мы - просто компания студентов, которые сделали данную платформу для получения зачета по предмету.</p>
@@ -86,20 +86,20 @@
 
 			</header>
 
-			<div id ="registration" class="hidden" onblur="showHide('registration')" tabindex="2">
-				<div id="reg">
-				<form id="registr">
-				<h1>Регистрация</h1>
-					<fieldset id="inputs">
-							<input id="username" type="text" placeholder="ЛОГИН" autofocus required>
-							<input id="email" type="text" placeholder="E-MAIL" required>
-							<input id="password" type="password" placeholder="ПАРОЛЬ" required>
-							<input id="conpassword" type="password" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
-					</fieldset>
-					<fieldset id="actions">
-							<input type="submit" id="submit" value="РЕГИСТРАЦИЯ">
-					</fieldset>
-				</form>
+			<div id ="registration" data-attr-wrp="reg-wrp" class="hidden">
+				<div id="reg" data-attr-wrp="reg-block" onblur="showHide('registration')" tabindex="3">
+					<form id="registr">
+					<h1>Регистрация</h1>
+						<fieldset id="inputs">
+								<input id="username" type="text" placeholder="ЛОГИН" autofocus required>
+								<input id="email" type="text" placeholder="E-MAIL" required>
+								<input id="password" type="password" placeholder="ПАРОЛЬ" required>
+								<input id="conpassword" type="password" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
+						</fieldset>
+						<fieldset id="actions">
+								<input type="submit" id="submit" value="РЕГИСТРАЦИЯ">
+						</fieldset>
+					</form>
 			</div>
 	</div>
 
@@ -108,13 +108,20 @@
 <div class="table">
 	<div class="col_wrap">
 	<div class="mainblock">
+
+			<div id="divfilterbutton" onclick="showHide('filterwindow')">
+				<a href="index.html">ФИЛЬТР</a>
+						<div id="filterwindow">
+						</div>
+			</div>
+
 	</div>
 
 	<div class="sideblock">
 	</div>
 </div>
 </div>
-<div id="poppup" class="hidden" onblur="showHide('poppup')">
-</div>
+
+
 	</body>
 	</html>
