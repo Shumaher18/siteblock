@@ -109,9 +109,29 @@
 	<div class="col_wrap">
 	<div class="mainblock">
 
-			<div id="divfilterbutton" onclick="showHide('filterwindow')">
-				<a href="index.html">ФИЛЬТР</a>
-						<div id="filterwindow">
+			<div id="divfilterbutton">
+				<a href="javascript:void(0)" onclick="showHide('filterwindow')">ФИЛЬТР</a>
+						<div id="filterwindow" class="hidden">
+
+							<fieldset>
+							  <legend>Фильтры</legend>
+							</fieldset>
+
+							<fieldset>
+							  <legend>Ночной режим</legend>
+							  <input type="radio" id="night-on" name="night" value="on">
+							  <label for="night-on">on</label>
+							  <input type="radio" id="night-off" name="night" value="off" checked>
+							  <label for="night-off">off</label>
+							</fieldset>
+
+							<fieldset>
+							  <legend>Язык</legend>
+							  <input type="radio" id="eng" name="language" value="eng">
+							  <label for="rus">English</label>
+							  <input type="radio" id="rus" name="language" value="rus" checked>
+							  <label for="eng">Русский</label>
+							</fieldset>
 						</div>
 			</div>
 

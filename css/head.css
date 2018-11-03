@@ -162,7 +162,8 @@ div {
   position: relative;
 }
 #addpost textarea {
-    resize:none
+    resize:none;
+    margin: 0 25px;
 }
 #addpost #submit{
   border-width: 0px;
@@ -222,12 +223,7 @@ div {
   font: normal 26px Arias;
   position: relative;
 }
-.hidden {
-  display: none;
-}
-.shown{
-  display: block;
-}
+
 #openModal #submit{
   border-width: 0px;
   border-style: solid;
@@ -251,6 +247,13 @@ div {
     text-align: center;
     border-radius: 5px;
     border: 2px solid #ffbc01;
+}
+
+.hidden {
+  display: none;
+}
+.shown{
+  display: block;
 }
 
 /*О нас*/
@@ -296,6 +299,8 @@ div {
   background-color: #ffd589;
   border: 0px solid #ffbc01;
   border-radius: 5px;
+  position: absolute;
+  bottom: 0;
   padding: 5px;
 }
 #o_nas h4{
