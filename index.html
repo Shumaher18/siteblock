@@ -22,6 +22,11 @@
 					</form>
 				</div>
 
+				<div id = "night_day"> <!--Солнце/Луна-->
+					<a href="#"><img src="img/sun.png" width="38px" height="38px"></img></a>
+					<a href="#"><img src="img/moon.png" width="38px" height="38px"></img></a>
+				</div>
+
 				<div class="divmenu"> <!--Меню-->
 						<div id="menu">
 								<ul>
@@ -38,7 +43,7 @@
 							<h1>ДОБАВИТЬ ПОСТ</h1>
 								<fieldset id="inputs">
 										<input id="title" type="text" placeholder="ТЕМА" autofocus required>
-										<textarea rows="15" cols="52" name="text"></textarea>
+										<textarea rows="15" cols="47" name="text"></textarea>
 								</fieldset>
 								<fieldset id="actions">
 										<input type="submit" id="submit" value="ОПУБЛИКОВАТЬ">
@@ -113,25 +118,18 @@
 				<a href="javascript:void(0)" onclick="showHide('filterwindow')">ФИЛЬТР</a>
 						<div id="filterwindow" class="hidden">
 
-							<fieldset>
-							  <legend>Фильтры</legend>
-							</fieldset>
+							<div id="filter1">
+							</div>
 
-							<fieldset>
-							  <legend>Ночной режим</legend>
-							  <input type="radio" id="night-on" name="night" value="on">
-							  <label for="night-on">on</label>
-							  <input type="radio" id="night-off" name="night" value="off" checked>
-							  <label for="night-off">off</label>
-							</fieldset>
+							<div id="filterSearch">
+								<form>
+									<input type="search" placeholder="Найти...">
+									<button type="submit"></button>
+								</form>
+							</div>
 
-							<fieldset>
-							  <legend>Язык</legend>
-							  <input type="radio" id="eng" name="language" value="eng">
-							  <label for="rus">English</label>
-							  <input type="radio" id="rus" name="language" value="rus" checked>
-							  <label for="eng">Русский</label>
-							</fieldset>
+							<div id="filter2">
+							</div>
 						</div>
 			</div>
 

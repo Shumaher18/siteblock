@@ -36,7 +36,7 @@ div {
 /*Поиск*/
 .search{
   float: left;
-  width: calc(100% - 800px);
+  width: calc(100% - 820px);
   height: 76px;
   position: relative;
   border-left: 1px solid black;
@@ -143,8 +143,8 @@ div {
 #addpost #inputs input{
   background: #ffd589;
   padding: 15px 15px 15px 30px;
-  margin: 10px;
-  width: 360px;
+  margin: 15 20px;
+  width: 350px;
   border: 1px solid #ccc;
 }
 #addpost fieldset{
@@ -163,7 +163,7 @@ div {
 }
 #addpost textarea {
     resize:none;
-    margin: 0 25px;
+    margin: 0 20px;
 }
 #addpost #submit{
   border-width: 0px;
@@ -380,4 +380,12 @@ div {
   right: 0;
   background-color: rgba(0,0,0,0.5);
    z-index: 99;
+}
+#night_day{
+  float: right;
+  width: 50px;
+  height: 76px;
+}
+#night_day img{
+  float: left;
 }
