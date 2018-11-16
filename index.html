@@ -1,10 +1,10 @@
 <html>
 <head>
-
 <link rel="stylesheet" href="css/head.css">
 <link rel="stylesheet" href="css/main.css">
-<script src="js/main.js"></script>
-	</head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
 
 		<body>
 
@@ -31,14 +31,14 @@
 						<div id="menu">
 								<ul>
 									<li><a href="index.html">НОВОСТИ</a></li>
-									<li><a href="javascript:void(0)" onclick="showHide('addpost')">ДОБАВИТЬ ПОСТ</a></li>
-									<li><a href="javascript:void(0)" onclick="showHide('o_nas')">О НАС</a></li>
-									<li><a href="javascript:void(0)" onclick="showHide('openModal')">ВОЙТИ</a>
+									<li><a href="javascript:void(0)" data-item="addpost" onclick="showHide(this)">ДОБАВИТЬ ПОСТ</a></li>
+									<li><a href="javascript:void(0)" data-item="o_nas" onclick="showHide(this)">О НАС</a></li>
+									<li><a href="javascript:void(0)" data-item="openModal" onclick="showHide(this)">ВОЙТИ</a>
 									</li>
 								</ul>
 						</div>
 
-						<div id="addpost" class="hidden" onblur="showHide('addpost')" tabindex="1">
+						<div id="addpost" class="hidden">
 							<form>
 							<h1>ДОБАВИТЬ ПОСТ</h1>
 								<fieldset id="inputs">
@@ -51,7 +51,7 @@
 							</form>
 						</div>
 
-						<div id="o_nas" class="hidden" onblur="showHide('o_nas')" tabindex="0">
+						<div id="o_nas" class="hidden">
 							<div id="main_o_nas">
 								<h1>О нас</h1>
 								<p>Мы - просто компания студентов, которые сделали данную платформу для получения зачета по предмету.</p>
@@ -60,7 +60,6 @@
 									<li> <p>Пешкес Валерий</p> <a href="https://vk.com/peshkes"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
 									<li> <p>Литвяк Виктор</p><a href="https://vk.com/victor.litvyak"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
 									<li> <p>Хохлов Алексей</p><a href="https://vk.com/lehka_omg"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
-									<li> <p>Собкалов Алексей</p><a href="https://vk.com/akyoster"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
 									<li> <p>Кеян Лиана</p><a href="https://vk.com/l.keyan"><img src="img/vk.png" width="20px" height="20px"></img></a></li>
 								</ul>
 						</div>
@@ -113,6 +112,15 @@
 <div class="table">
 	<div class="col_wrap">
 	<div class="mainblock">
+		<div class="main_content_block">
+
+			<div id="mini_post_1" class="posts" for="hd-1"> </div>
+			<input class="hidden" id="hd-1" type="checkbox">
+		    <label for="hd-1">Нажмите здесь, чтобы прочитать больше о HTML!</label>
+		    <div>
+		        HTML — стандартный язык разметки документов во Всемирной паутине. Большинство веб-страниц содержат описание разметки на языке HTML (или XHTML). Язык HTML интерпретируется браузерами и отображается в виде документа в удобной для человека форме..
+		    </div>
+
 
 			<div id="divfilterbutton">
 				<a href="javascript:void(0)" onclick="showHide('filterwindow')">ФИЛЬТР</a>
@@ -133,6 +141,7 @@
 						</div>
 			</div>
 
+		</div>
 	</div>
 
 	<div class="sideblock">
@@ -142,4 +151,5 @@
 
 
 	</body>
+	<script src="js/main.js"></script>
 	</html>

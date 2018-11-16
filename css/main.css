@@ -46,6 +46,26 @@ body{
   background-position: right bottom;
 }
 
+/* скрываем блоки с содержанием */
+.hidden, .hidden + label ~ div {
+    display: none;
+}
+.hidden:checked + label + div {
+    display: block;
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px;
+}
+.posts{
+  width: 400px;
+  height: 400px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 2px;
+}
+
 #divfilterbutton a {
 	text-decoration: none;
 	color:black;
