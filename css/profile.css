@@ -80,3 +80,8 @@
   padding: 5px;
   text-align:center;
 }
+.profilemainblock hr{
+  position: relative;
+  top: 25px;
+  left: 40px;
+}

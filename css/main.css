@@ -14,10 +14,16 @@
   padding-top: 1%
 }
 
+.main_content_block{
+
+  display: table;
+}
+
 /*main-content*/
 .mainblock{
   border:3px solid #ffbc01;
-  width: 75%;
+  width:75%;
+  height:95%;
   height: inherit;
   display: flex;
   display: -webkit-flex;
@@ -30,8 +36,10 @@
 /*feed-content*/
 .sideblock{
   display: flex;
+  display: -webkit-flex;
   border: 3px solid black;
-  width: 25%;
+  width:25%;
+  height:95%;
   align-items: center;
   height: inherit;
   border-radius: 10px;
@@ -58,12 +66,44 @@ body{
     box-shadow: inset 3px 3px 10px #7d8e8f;
     padding: 10px;
 }
-.posts{
-  width: 400px;
-  height: 400px;
+.posts{ /*ПОСТЫ*/
+  position: relative;
+  width: 360px;
+  height: 200px;
   border: 2px solid black;
   border-radius: 10px;
-  margin: 2px;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  overflow: hidden;
+}
+.section{
+  width: 100%;
+  text-align: right;
+}
+.article{
+  width: 100%;
+  background-color: #ffbc01;
+  font-size: 25px;
+}
+.autor_date{
+  width: 100%;
+}
+.autor{
+  width: 50%;
+  float: left;
+}
+.date{
+  float: left;
+  text-align: right;
+  width: 50%;
+}
+.post_text{
+  float: left;
+  width: 90%;
+  border-top: 2px solid black;
+  overflow: hidden;
+  margin: 15px;
 }
 
 #divfilterbutton a {
