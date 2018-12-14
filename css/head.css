@@ -36,7 +36,7 @@ div {
 /*Поиск*/
 .search{
   float: left;
-  width: calc(100% - 820px);
+  width: calc(100% - 850px);
   height: 76px;
   position: relative;
   border-left: 1px solid black;
