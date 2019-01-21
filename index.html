@@ -4,6 +4,8 @@
 <link rel="stylesheet" href="css/head.css">
 <link rel="stylesheet" href="css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
 
 </head>
 
@@ -32,7 +34,7 @@
 						<div id="menu">
 								<ul>
 									<li><a href="index.html">НОВОСТИ</a></li>
-									<li><a href="javascript:void(0)" data-item="addpost" onclick="showHide(this)">ДОБАВИТЬ ПОСТ</a></li>
+									<li><a href="#addpost" class="open_modal" data-item="addpost">ДОБАВИТЬ ПОСТ</a></li>
 									<li><a href="javascript:void(0)" data-item="o_nas" onclick="showHide(this)">О НАС</a></li>
 									<li><a href="javascript:void(0)" data-item="openModal" onclick="showHide(this)">ВОЙТИ</a>
 									</li>
@@ -40,6 +42,7 @@
 						</div>
 
 						<div id="addpost" class="hidden">
+							<span class="modal_close">X</span>
 							<form>
 							<h1>ДОБАВИТЬ ПОСТ</h1>
 								<fieldset id="inputs">
@@ -157,7 +160,7 @@
 </div>
 
 
-
+<div id="overlay" style="display: none;"></div>
 	</body>
-	<script src="js/main.js"></script>
+
 	</html>

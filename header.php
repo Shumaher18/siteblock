@@ -14,7 +14,7 @@
 
   <div id = "night_day"> <!--Солнце/Луна-->
     <a href="#"><img src="img/sun.png" width="38px" height="38px"></img></a>
-    <a href="#"><img src="img/moon.png" width="38px" height="38px"></img></a>
+    <a href="?name=moonlite"><img src="img/moon.png" width="38px" height="38px"></img></a>
   </div>
 
   <div class="divmenu"> <!--Меню-->
