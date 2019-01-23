@@ -20,8 +20,8 @@
   <div class="divmenu"> <!--Меню-->
       <div id="menu">
           <ul>
-            <li><a href="index.html">НОВОСТИ</a></li>
-            <li><a href="javascript:void(0)" data-item="addpost" onclick="showHide(this)">ДОБАВИТЬ ПОСТ</a></li>
+            <li><a href="?name=main">НОВОСТИ</a></li>
+            <li><a href="#addpost" name="modal">ДОБАВИТЬ ПОСТ</a></li>
             <li><a href="javascript:void(0)" data-item="o_nas" onclick="showHide(this)">О НАС</a></li>
             <li><a href="javascript:void(0)" data-item="openModal" onclick="showHide(this)">ВОЙТИ</a>
             </li>
