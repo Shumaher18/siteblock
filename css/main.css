@@ -10,13 +10,14 @@
 	display: flex;
 	display: -webkit-flex;
 	height:99%;
-	justify-content: baseline;
+	/* justify-content: baseline; */
   padding-top: 1%
 }
 
 .main_content_block{
 
   display: table;
+  overflow-y: scroll;
 }
 
 /*main-content*/
@@ -27,7 +28,6 @@
   height: inherit;
   display: flex;
   display: -webkit-flex;
-  align-items: center;
   border-radius: 10px;
   position: relative;
   z-index: 1;
@@ -35,16 +35,16 @@
 
 /*feed-content*/
 .sideblock{
-  display: flex;
-  display: -webkit-flex;
+  display: table;
+  /* display: flex;
+  display: -webkit-flex; */
   border: 3px solid black;
-  width:25%;
-  height:95%;
-  align-items: center;
-  height: inherit;
+  width:380px;
+  height: 500px;
   border-radius: 10px;
   position: relative;
   z-index: 1;
+  overflow-y: scroll;
 }
 
 body{
@@ -200,4 +200,13 @@ body{
     left: 0;
     cursor: pointer;
     display: none;
+}
+
+@media screen and (max-width: 720px) {
+  .sideblock
+  {
+
+  }
+
+
 }
