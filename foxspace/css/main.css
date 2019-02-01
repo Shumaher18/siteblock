@@ -1,0 +1,175 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+/*Таблица*/
+.col_wrap{
+  position: relative;
+	display: flex;
+	display: -webkit-flex;
+	height: calc(100vh - 100px);
+  margin-top: 80px;
+}
+
+/*main-content*/
+.mainblock{
+  border:3px solid #ffbc01;
+  width: 100%;
+  height: inherit;
+  border-radius: 10px;
+  position: relative;
+  overflow-y: auto;
+}
+
+/*feed-content*/
+.sideblock{
+  margin-left: auto;
+  border: 3px solid black;
+  width: 380px;
+  height: inherit;
+  border-radius: 10px;
+  position: relative;
+  overflow-y: auto;
+}
+
+body{
+  background-image: url(../img/bighvost.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+
+/* скрываем блоки с содержанием */
+.hidden, .hidden + label ~ div {
+    display: none;
+}
+.hidden:checked + label + div {
+    display: block;
+    background: #efefef;
+    -moz-box-shadow: inset 3px 3px 10px #7d8e8f;
+    -webkit-box-shadow: inset 3px 3px 10px #7d8e8f;
+    box-shadow: inset 3px 3px 10px #7d8e8f;
+    padding: 10px;
+}
+.posts{ /*ПОСТЫ*/
+  position: relative;
+  width: 360px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+  float: left;
+  margin: 10px;
+  padding: 5px;
+  overflow: hidden;
+}
+.section{
+  width: 100%;
+  text-align: right;
+}
+.article{
+  width: 100%;
+  background-color: #ffbc01;
+  font-size: 25px;
+}
+.autor_date{
+  width: 100%;
+}
+.autor{
+  width: 50%;
+  float: left;
+}
+.date{
+  float: left;
+  text-align: right;
+  width: 50%;
+}
+.post_text{
+  float: left;
+  width: 90%;
+  border-top: 2px solid black;
+  overflow: hidden;
+  margin: 15px;
+}
+
+#divfilterbutton a {
+	text-decoration: none;
+	color:black;
+	padding:10px 20px; добавляем отступ*/
+	font-family: arial;
+	display: block;
+  font-size: 15;
+  text-align: center;
+  height: 20px;
+}
+
+#divfilterbutton{
+  position: absolute;
+  bottom: 0;
+  border: 1px solid;
+  border-radius: 8px;
+}
+
+/*Форма фильтрации*/
+#filterwindow{
+  border-radius: 10px;
+  height: 400px;
+  width: 400px;
+  border: 2px solid black;
+  position: absolute;
+  padding: 0;
+  left: 0px;
+  bottom: 50px;
+  background: white;
+}
+/* 400  4+1+200+1+2  +  2+1+200+1+4        58 + 16 = 74*/
+#filter1{
+  float: left;
+  /* border: 1px solid black; */
+  width: 193px;
+  height: 390px;
+  margin: 4px 2px 4px 4px;
+  /* border-radius: 8px 0 0 8px; */
+}
+#filter2{
+  float: left;
+  border-left: 2px solid black;
+  width: 193px;
+  height: 346px;
+  margin: 2px 4px 4px 2px;
+  /* border-radius: 0 0 8px 0; */
+}
+#filterSearch{
+  float: left;
+  width: 194px;
+  height: 40px;
+  position: relative;
+  margin: 4px 4px 2px 2px;
+}
+#filterSearch form {
+  background: #ffd589;
+  border-radius: 0 8px 0 0;
+}
+#filterSearch input, #filterSearch button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+#filterSearch input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+}
+#filterSearch button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  cursor: pointer;
+}
+#filterSearch button:before {
+  content: "\2714";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: black;
+}

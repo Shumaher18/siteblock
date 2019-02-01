@@ -1,0 +1,410 @@
+.header, .header .cell-wrapper, .header-affix, .header-row {
+    height: 76px;
+}
+
+.header-affix {
+    min-width: 1240px;
+    width: 99.3%;
+    background: white;/*linear-gradient(to top, #FDD9B5, #FAAD7A);*/
+    -webkit-box-shadow: 0 1px 6px 0 rgba(0,0,0,.65);
+    box-shadow: 0 1px 6px 0 rgba(0,0,0,.65);
+    -webkit-transition: top .2s;
+    -o-transition: top .2s;
+    transition: top .2s;
+    border-radius: 0 0 10px 10px;
+}
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    z-index:9;
+}
+
+div {
+    display: block;
+}
+
+/*Шапка*/
+.logo {
+    float: left;
+    width: 200px;
+}
+.logo img{
+  margin: 0 25px;
+}
+
+/*Поиск*/
+.search{
+  float: left;
+  width: calc(100% - 850px);
+  height: 76px;
+  position: relative;
+  border-left: 1px solid black;
+}
+.search form {
+  margin-left: 30px;
+  background: #ffbc01;
+  margin-top: 18px;
+  margin-right: 15px;
+  border-radius: 50px 20px 20px 50px;
+}
+.search input, .search button {
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.search input {
+  width: 100%;
+  height: 42px;
+  padding-left: 15px;
+
+}
+.search button {
+  height: 42px;
+  width: 42px;
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+}
+.search button:before {
+  content: "\2714";
+  font-family: FontAwesome;
+  font-size: 16px;
+  color: black;
+}
+
+/*Меню*/
+.divmenu{
+  width: 550px;
+  position: relative;
+  float: right;
+}
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	height: 76px;
+}
+#menu a {
+	text-decoration: none;
+	color:black;
+	padding:15px 20px 15px 20px; добавляем отступ*/
+	font-family: arial;
+	line-height:50px;
+	display: block;
+  height: 46px;
+  font-size: 18;
+  text-align: center;
+}
+#menu a:hover {
+	background:#ffd589;
+}
+#menu li {
+	float:left;
+	position:relative;
+	width: auto;
+}
+/*#menu li > ul {
+    position:absolute;
+    top:70px;
+    display:none;
+    height: 25px;
+}
+#menu ul li ul li a {
+    padding: 0 15px 0 15px;
+    height: 50px;
+    border-left: 0px;
+    border-right: 0px;
+    background:#6DC39E;
+    border-top: 2px solid #696969;
+}
+#menu li:hover > ul {
+    display:block;
+    height: 25px;
+    width:150px;
+}
+#menu li:hover > ul > li {
+    float:none;
+    width:150px;
+}*/
+
+/*Форма доабавления*/
+#addpost{
+  border-radius: 10px;
+  height: 410px;
+  width: 400px;
+  border: 3px solid;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  background: white;
+  position: fixed; /* чтобы окно было в видимой зоне в любом месте */
+	top: 45%; /* отступаем сверху 45%, остальные 5% подвинет скрипт */
+	left: 50%; /* половина экрана слева */
+	margin-top: -150px;
+	margin-left: -150px; /* тут вся магия центровки css, отступаем влево и вверх минус половину ширины и высоты соответственно =) */
+	display: none; /* в обычном состоянии окна не должно быть */
+	opacity: 0; /* полностью прозрачно для анимирования */
+	z-index: 5; /* окно должно быть наиболее большем слое */
+	padding: 20px 10px;
+}
+#addpost #modal_close {
+	width: 21px;
+	height: 21px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	display: block;
+}
+
+#addpost #inputs input{
+  background: #ffd589;
+  padding: 15px 15px 15px 30px;
+  margin: 15 20px;
+  width: 350px;
+  border: 1px solid #ccc;
+}
+#addpost fieldset{
+  border-width: 0px;
+  padding: 0;
+  margin: 5px auto;
+  width: 380px;
+}
+#addpost h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  letter-spacing: 4px;
+  font: normal 26px Arias;
+  position: relative;
+}
+#addpost textarea {
+    resize:none;
+    margin: 0 20px;
+}
+#addpost #submit{
+  border-width: 0px;
+  border-style: solid;
+  border-color: black;
+  height: 35px;
+  padding: 0;
+  width: 250px;
+  cursor: pointer;
+  font: 15px Arial;
+  color: black;
+  margin: 10px 15px;
+  background: #ffbc01;
+  border-radius: 5px;
+  float: right;
+}
+#addpost #actions a{
+    text-decoration: none;
+    color: black;
+    line-height: 35px;
+    margin: 0px 10px 15px 15px;
+    padding: 5px; добавляем отступ*/
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ffbc01;
+}
+
+/*Форма авторизации*/
+#openModal{
+  border-radius: 10px;
+  height: 280px;
+  width: 280px;
+  border: 3px solid;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  background: white;
+}
+#openModal #inputs input{
+  background: #ffd589;
+  padding: 15px 15px 15px 30px;
+  margin: 10px;
+  width: 240px;
+  border: 1px solid #ccc;
+}
+#openModal fieldset{
+  border-width: 0px;
+  padding: 0;
+  margin: 5px auto;
+  width: 260px;
+}
+#openModal h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  letter-spacing: 4px;
+  font: normal 26px Arias;
+  position: relative;
+}
+
+#openModal #submit{
+  border-width: 0px;
+  border-style: solid;
+  border-color: black;
+  height: 35px;
+  padding: 0;
+  width: 250px;
+  cursor: pointer;
+  font: 15px Arial;
+  color: black;
+  margin: 10px 15px;
+  background: #ffbc01;
+  border-radius: 5px;
+}
+#openModal #actions a{
+    text-decoration: none;
+    color: black;
+    line-height: 35px;
+    margin: 0px 10px 15px 15px;
+    padding: 5px; добавляем отступ*/
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ffbc01;
+}
+
+.hidden {
+  display: none;
+}
+.shown{
+  display: block;
+}
+
+/*О нас*/
+#o_nas{
+  width: 500px;
+  height: 388px;
+  border-radius: 10px;
+  border: 3px solid;
+  position: absolute;
+  right: 0px;
+  top: 60px;
+  background: white;
+  z-index: 5;
+}
+#o_nas h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  letter-spacing: 4px;
+  font: normal 26px Arias;
+  position: relative;
+}
+#o_nas ul{
+  margin: 5px 0 10px 0;
+}
+#o_nas li{
+  list-style-type: none;
+  font-family: arial;
+}
+#o_nas li p{
+  display: inline;
+}
+#o_nas img{
+  position: relative;
+  top: 4px;
+}
+#o_nas p{
+  font: normal 18px Arias;
+  padding: 5px;
+  margin: 5px 0;
+}
+#diskleymer{
+  background-color: #ffd589;
+  border: 0px solid #ffbc01;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+  padding: 5px;
+}
+#o_nas h4{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  font: normal 20px Arias;
+  position: relative;
+}
+/* Регистрация */
+#reg{
+  border-radius: 10px;
+  height: 400px;
+  width: 500px;
+  border: 3px solid;
+  position: absolute;
+  margin-left: 35%;
+  margin-top: 10%;
+  background: white;
+}
+#reg #inputs input{
+  background: #ffd589;
+  padding: 15px 15px 15px 30px;
+  margin: 10px;
+  width: 350px;
+  border: 1px solid #ccc;
+}
+#reg fieldset{
+  border-width: 0px;
+  padding: 0;
+  margin: 5px auto;
+  width: 260px;
+}
+#reg h1{
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10px 0 10px 0;
+  letter-spacing: 4px;
+  font: normal 26px Arias;
+  position: relative;
+}
+.hidden {
+  display: none;
+}
+.shown{
+  display: block;
+}
+#reg #submit{
+  border-width: 0px;
+  border-style: solid;
+  border-color: black;
+  height: 35px;
+  padding: 0;
+  width: 250px;
+  cursor: pointer;
+  font: 15px Arial;
+  color: black;
+  margin: 10px 15px;
+  background: #ffbc01;
+  border-radius: 5px;
+}
+#reg #actions a{
+    text-decoration: none;
+    color: black;
+    line-height: 35px;
+    margin: 0px 10px 15px 15px;
+    padding: 5px; добавляем отступ*/
+    text-align: center;
+    border-radius: 5px;
+    border: 2px solid #ffbc01;
+}
+#registration{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top:0;
+  right: 0;
+  background-color: rgba(0,0,0,0.5);
+   z-index: 99;
+}
+#night_day{
+  float: right;
+  width: 50px;
+  height: 76px;
+}
+#night_day img{
+  float: left;
+}

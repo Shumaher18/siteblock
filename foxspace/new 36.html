@@ -1,0 +1,49 @@
+<style>
+.shown{
+	display: block;
+}
+.hidden{
+	display: none;
+}
+</style>
+
+<body>
+
+	<a href="javascript:void(0)" data-item="asd" onclick="showHide(this)">asd</a>
+
+	<div class="wrapper hidden" id="asd">
+			<p>asdadasdas</p>
+			<p>asdadasdas</p>
+			<input type="text"/>
+	</div>
+
+	<script>
+
+		var global_opened_object = {};
+
+		function showHide(obj){
+			obj = obj || null;
+			if(obj){
+				var action_item_id = obj.getAttribute('data-item');
+				var action_item_obj = document.getElementById(action_item_id);
+				if(action_item_obj.className == 'wrapper shown'){
+					action_item_obj.className = 'wrapper hidden';
+				}else{
+					action_item_obj.className = 'wrapper shown';
+					global_opened_object = action_item_obj;
+				}
+			}else{
+				global_opened_object.className = 'wrapper hidden';
+			}
+
+		}
+
+		document.body.addEventListener('click', function(event){
+			console.log(event.target.parentNode);
+			console.log(global_opened_object);
+			if(event.target.parentNode!=global_opened_object&&!event.target.getAttribute('data-item')) showHide(null);
+		});
+
+	</script>
+
+</body>
