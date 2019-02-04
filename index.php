@@ -10,7 +10,7 @@
 <?php
 
   include 'header.php';
-	
+
 	    switch ($_GET["name"]) {
 	    case moonlite:
 	        include 'profile.php';
@@ -23,13 +23,14 @@
 ?>
 
     <body>
-			// $c=mysqli_connect('localhost', 'user07', 'Password01','db07');
-			// mysqli_query($c, 'set names utf8');
-			// $qr = mysqli_query($c, 'select Theme from foxs_posts where id=3;');
-			// $qr = mysqli_fetch_assoc($qr);
-			// foreach($qr as $k=>$v){
-			//
-			//  	echo $v;
-			//
-			// };
+
 <html>
+<!-- $c=mysqli_connect('localhost', 'user07', 'Password01','db07');
+mysqli_query($c, 'set names utf8');
+$qr = mysqli_query($c, 'select Theme from foxs_posts where id=3;');
+$qr = mysqli_fetch_assoc($qr);
+foreach($qr as $k=>$v){
+
+echo $v;
+
+}; -->
