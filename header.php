@@ -14,14 +14,14 @@
 
   <div id = "night_day"> <!--Солнце/Луна-->
     <a href="#"><img src="img/sun.png" width="38px" height="38px"></img></a>
-    <a href="?name=moonlite"><img src="img/moon.png" width="38px" height="38px"></img></a>
+    <a href="#"><img src="img/moon.png" width="38px" height="38px"></img></a>
   </div>
 
   <div class="divmenu"> <!--Меню-->
       <div id="menu">
           <ul>
-            <li><a href="?name=main">НОВОСТИ</a></li>
-            <li><a href="#addpost" name="modal">ДОБАВИТЬ ПОСТ</a></li>
+            <li><a href="index.html">НОВОСТИ</a></li>
+            <li><a href="#addpost" class="open_modal" data-item="addpost">ДОБАВИТЬ ПОСТ</a></li>
             <li><a href="javascript:void(0)" data-item="o_nas" onclick="showHide(this)">О НАС</a></li>
             <li><a href="javascript:void(0)" data-item="openModal" onclick="showHide(this)">ВОЙТИ</a>
             </li>
@@ -29,6 +29,7 @@
       </div>
 
       <div id="addpost" class="hidden">
+        <span class="modal_close">X</span>
         <form>
         <h1>ДОБАВИТЬ ПОСТ</h1>
           <fieldset id="inputs">
@@ -77,5 +78,24 @@
         efasdfhasfa
       </div> -->
   </div>
+
+  <div id ="registration" data-attr-wrp="reg-wrp" class="hidden">
+    <div id="reg" data-attr-wrp="reg-block" onblur="showHide('registration')" tabindex="3">
+      <form id="registr">
+      <h1>Регистрация</h1>
+        <fieldset id="inputs">
+            <input id="username" type="text" placeholder="ЛОГИН" autofocus required>
+            <input id="email" type="text" placeholder="E-MAIL" required>
+            <input id="password" type="password" placeholder="ПАРОЛЬ" required>
+            <input id="conpassword" type="password" placeholder="ПОВТОРИТЕ ПАРОЛЬ">
+        </fieldset>
+        <fieldset id="actions">
+            <input type="submit" id="submit" value="РЕГИСТРАЦИЯ">
+        </fieldset>
+      </form>
+  </div>
+</div>
+
+</div>
 
 </header>

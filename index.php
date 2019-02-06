@@ -12,7 +12,7 @@
   include 'header.php';
 
 	    switch ($_GET["name"]) {
-	    case moonlite:
+	    case "moonlite":
 	        include 'profile.php';
 	        break;
 	    default:
